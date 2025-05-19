@@ -1,4 +1,4 @@
-import { Badge } from "@/app/components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 import { CATEGORY_ICON } from "@/constants/category-icon";
 import { Category } from "@prisma/client";
 

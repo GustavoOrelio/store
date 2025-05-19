@@ -1,4 +1,4 @@
-import ProductItem from "@/app/components/ui/product-item";
+import ProductItem from "@/components/ui/product-item";
 import { computeProductTotalPrice } from "@/helpers/product";
 import { Product } from "@prisma/client";
 
