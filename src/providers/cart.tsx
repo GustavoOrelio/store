@@ -39,15 +39,12 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
   const [products, setProducts] = useState<CartProduct[]>([]);
 
   useEffect(() => {
-    // Initialize products from localStorage when component mounts (client-side only)
-    const storedProducts = localStorage.getItem("@fsw-store/cart-products");
-    if (storedProducts) {
-      setProducts(JSON.parse(storedProducts));
-    }
+    setProducts(
+      JSON.parse(localStorage.getItem("@fsw-store/cart-products") || "[]"),
+    );
   }, []);
 
   useEffect(() => {
-    // Update localStorage when products change
     localStorage.setItem("@fsw-store/cart-products", JSON.stringify(products));
   }, [products]);
 
