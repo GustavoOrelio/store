@@ -29,10 +29,10 @@ export const CartContext = createContext<ICartContext>({
   total: 0,
   subtotal: 0,
   totalDiscount: 0,
-  addProductToCart: () => { },
-  decreaseProductQuantity: () => { },
-  increaseProductQuantity: () => { },
-  removeProductFromCart: () => { },
+  addProductToCart: () => {},
+  decreaseProductQuantity: () => {},
+  increaseProductQuantity: () => {},
+  removeProductFromCart: () => {},
 });
 
 const CartProvider = ({ children }: { children: ReactNode }) => {

@@ -33,9 +33,10 @@ const ProductImages = ({ imageUrls, name }: ProductImagesProps) => {
           <button
             key={imageUrl}
             className={`flex h-[100px] items-center justify-center rounded-lg bg-accent
-                ${imageUrl === currentImage &&
-              "border-2 border-solid border-primary"
-              }
+                ${
+                  imageUrl === currentImage &&
+                  "border-2 border-solid border-primary"
+                }
             `}
             onClick={() => handleImageClick(imageUrl)}
           >

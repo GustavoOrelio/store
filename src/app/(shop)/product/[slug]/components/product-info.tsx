@@ -17,7 +17,7 @@ interface ProductInfoProps {
   product: ProductWithTotalPriceAndWishLists;
 }
 
-const ProductInfo = ({ product }: ProductInfoProps) => {
+const ProductInfo = ( { product } : ProductInfoProps) => {
   console.log(product.wishLists);
   const [quantity, setQuantity] = useState(1);
 
@@ -82,7 +82,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
       </div>
 
       <div className="mt-8 flex flex-col gap-5">
-        <WishButton productId={product.id} wishLists={product.wishLists} />
+        <WishButton productId={product.id} wishLists={product.wishLists}  />
 
         <Button className="font-bold uppercase" onClick={handleAddToCartClick}>
           Adicionar ao carrinho

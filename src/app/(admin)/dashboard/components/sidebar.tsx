@@ -30,9 +30,10 @@ const Sidebar = () => {
           <Button
             variant="outline"
             className={`flex w-full justify-start gap-2
-          ${path.includes("/products") &&
-              "bg-primary text-white hover:bg-primary"
-              }
+          ${
+            path.includes("/products") &&
+            "bg-primary text-white hover:bg-primary"
+          }
         `}
           >
             <PackageIcon size={16} />
@@ -43,9 +44,10 @@ const Sidebar = () => {
         <Link href="/dashboard/categories">
           <Button
             variant="outline"
-            className={`flex w-full justify-start gap-2 ${path.includes("/categories") &&
+            className={`flex w-full justify-start gap-2 ${
+              path.includes("/categories") &&
               "bg-primary text-white hover:bg-primary"
-              }`}
+            }`}
           >
             <ListOrderedIcon size={16} />
             Categorias
@@ -55,9 +57,10 @@ const Sidebar = () => {
         <Link href="/dashboard/orders">
           <Button
             variant="outline"
-            className={`flex w-full justify-start gap-2 ${path.includes("/orders") &&
+            className={`flex w-full justify-start gap-2 ${
+              path.includes("/orders") &&
               "bg-primary text-white hover:bg-primary"
-              }`}
+            }`}
           >
             <PackageSearchIcon size={16} />
             Pedidos
